@@ -1,0 +1,101 @@
+
+/*To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+
+ 
+    Created on : 18 Mar 2023, 02:32:00
+    Author     : Huawei*/
+
+
+
+#title
+{
+    background-color: black;
+    font-size: 3vw;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+input
+{
+    font-size: 2vw;
+}
+
+label
+{
+    margin-left: 5%;
+    font-size: 2vw;
+}
+
+form
+{
+    width: 80%;
+    margin:auto;
+    margin-top: 9%;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    background-color: white;
+}
+
+#eventName:valid
+{
+    background-color: rgb(102, 255, 204);
+}
+
+#eventName:invalid
+{
+    background-color: rgb(255, 102, 102);
+}
+
+#others:valid
+{
+    background-color: rgb(102, 255, 204);
+}
+
+#others:invalid
+{
+    background-color: rgb(255, 102, 102);
+}
+
+#maxParticipants:valid
+{
+    background-color: rgb(102, 255, 204);
+}
+
+#maxParticipants:invalid
+{
+    background-color: rgb(255, 102, 102);
+}
+
+#details:valid
+{
+    background-color: rgb(102, 255, 204);
+}
+
+#details:invalid
+{
+    background-color: rgb(255, 102, 102);
+}
+
+
+body
+{
+    background-image: url(./picture/background.jpg);
+}
+
+.error
+{
+    color: red;
+    margin-left: 5%;
+}
+
+.success
+{
+    color: green;
+    margin-left: 5%;
+    font-size: 2em;
+}
+

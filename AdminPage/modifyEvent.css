@@ -1,0 +1,187 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25 Mar 2023, 14:39:25
+    Author     : Huawei
+*/
+
+#title
+{
+    background-color: black;
+    font-size: 3vw;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+input
+{
+    font-size: 2vw;
+}
+
+label
+{
+    margin-left: 5%;
+    font-size: 2vw;
+}
+
+form
+{
+    width: 80%;
+    margin:auto;
+    margin-top: 8%;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    background-color: white;
+}
+
+#eventName:valid
+{
+    background-color: rgb(102, 255, 204);
+}
+
+#eventName:invalid
+{
+    background-color: rgb(255, 102, 102);
+}
+
+#others:valid
+{
+    background-color: rgb(102, 255, 204);
+}
+
+#others:invalid
+{
+    background-color: rgb(255, 102, 102);
+}
+
+#maxParticipants:valid
+{
+    background-color: rgb(102, 255, 204);
+}
+
+#maxParticipants:invalid
+{
+    background-color: rgb(255, 102, 102);
+}
+
+#details:valid
+{
+    background-color: rgb(102, 255, 204);
+}
+
+#details:invalid
+{
+    background-color: rgb(255, 102, 102);
+}
+
+
+body
+{
+    background-image: url(./picture/background.jpg);
+    padding: 0;
+    margin: 0;
+}
+
+#participants
+{
+    width: 80%;
+    margin:auto;
+    margin-top: 2%;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    background-color: white;
+    border-collapse: collapse;
+}
+
+#participantDetails
+{
+    background-color: black;
+    font-size: 3vw;
+    color: white;
+    text-align: center;
+    border-top: 1px solid white;
+}
+
+#contacts
+{
+    font-size: 2vw;
+    text-align: center;
+}
+
+#participants td
+{
+  border-bottom: 1px solid grey;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+#action
+{
+    color: red;
+}
+
+
+#action:hover
+{
+    background-color:  grey;
+    color: aqua;
+}
+
+
+
+
+
+#t1
+{
+    display: table;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    background-color: white;
+    height: 12%;
+    box-shadow: 1px 3px 8px rgb(140,140,140);
+}
+
+
+#menu
+{
+    width: 3%;
+    display: inline-block;
+    position: absolute;
+    top: 23%;
+    left: 2%;
+}
+
+#darkMode
+{
+    width: 3%;
+    display: inline-block;
+    position: absolute;
+    top: 23%;
+    left: 12%;
+}
+
+#h1
+{
+    display: inline-block;
+    position: absolute;
+    left: 40%;
+    top: 0%;
+    font-size: 2.6vw;
+}
+
+#adminLogo
+{
+    display: inline-block;
+    width: 4%;
+    border-radius: 50%;
+    right: 5%;
+    top: 13%;
+    position: absolute;
+}

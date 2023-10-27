@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Badminton Club</title>
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="myticket.css">
+        <script src="header.js" defer></script>
+
+        <style>
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <!-- Header -->
+        <header>
+            <table>
+                <tr>
+                    <td style="width: 7%; text-align: end;">
+                        <a href="user.html" title="Homepage"><img src="./picture/logo.jpg" alt="Logo" class="logo"/></a>
+                    </td>
+                    <td style="width: 10%; color: rgb(70, 70, 70)" class="club">
+                        <h1><i>Badminton<br>Club</i></h1>
+                    </td>
+                    <td style="text-align: center;">
+                        <form>
+                            <label for="search"></label>
+                            <input type="search" id="search" name="search" placeholder="&nbsp;&nbsp;Search" title="Type to search">
+                            <button type="submit" id="srchbtn" title="Search">Search</button>
+                          </form>              
+                    </td>
+                    <nav>
+                        <ul>
+                            <li style="list-style-type: none;">
+                                <td class="toplink">
+                                    <a href="training.html">Training</a>
+                                </td>
+                            </li>
+                            <li style="list-style-type: none;">
+                                <td class="toplink">
+                                    <a href="myticket.html" class="actived">MyTicket</a>
+                                </td>
+                            </li>
+                            <li style="list-style-type: none;">
+                                <td class="toplink" style="width: 11%;">
+                                    <a href="contactus.html">ContactUs</a>
+                                </td>
+                            </li>
+                            <li style="list-style-type: none;">
+                                <td class="toplinks" style="width: 7%;">
+                                    <img src="./picture/KAIAN.jpeg" title="SIM" alt="">
+                                    <div class="profile">
+                                        <div style="background-color: rgba(194, 194, 194, 0.799); border-radius: 5px 5px 0 0;">
+                                            <img src="./picture/KAIAN.jpeg" title="View Picture" alt="">
+                                        </div>
+                                        <div style="padding: 5% 0 5% 0; line-height: 30px;">
+                                            <p>Sim Kai An</p>
+                                            <p>simka-wm22@student.tarc.edu.my</p>
+                                            <p>22WMD01669</p>
+                                        </div>
+                                        <a class="acc">Manage Account   <p class="arrow">&#8883;</p> </a>
+                                        <div class="setting">
+                                            <a href="#">Change name</a>
+                                            <a href="#">Change password</a>
+                                            <a href="#">Change profile picture</a>
+                                        </div>
+                                        <a onclick="logOut()">Logout</a>
+                                    </div>
+                                </td>
+                            </li>
+                        </ul>
+                    </nav>
+                    <td class="menu">
+                        <button id="open" title="Menu">&#9776;</button>
+                    </td>
+                </tr>
+            </table>
+        </header>
+        <!-- Header -->
+
+        <!-- View Profile Picture -->
+        <div class="view">
+                <img src="./picture/KAIAN.jpeg" alt="">
+        </div>
+        <!-- View Profile Picture -->
+
+        <!-- Hidden Menu -->
+        <div id="menuList">
+            <ul>
+                <li class="close" style="background-color: rgb(38, 38, 38);">
+                    <h1 id="heading">Menu</h1>
+                    <button id="close" title="Close">&#10006;</button>
+                </li>
+                <li class="hp">
+                    <a><img src="./picture/KAIAN.jpeg" title="View profile" alt=""></a>
+                    <p class="hname">Sim Kai An</p>
+                </li>
+                <li class="nav"><a href="training.html">&#9751;&nbsp;&nbsp;&nbsp;Training</a></li>
+                <li class="nav"><a href="myticket.html">&#9873;&nbsp;&nbsp;&nbsp;MyTicket</a></li>
+                <li class="nav"><a href="contactus.html">&#9742;&nbsp;&nbsp;&nbsp;ContactUs</a></li>
+                <li class="nav"><a onclick="logOut()">&#9754;&nbsp;&nbsp;&nbsp;Logout</a></li>
+            </ul>
+        </div>
+        <!-- Hidden Menu -->
+
+        <!-- Hidden Manage Account -->
+        <div class="outhma">
+            <div class="hma">
+                <div class="bar">
+                    <h4 style="display: inline;">&nbsp;&nbsp;&nbsp;Account Setting</h4>
+                    <button id="aclose" title="Close">&#10006;</button>
+                </div>
+                <div class="inhma">
+                    <img class="himg" title="View picture" src="./picture/KAIAN.jpeg" alt="">
+                    <div class="dhma">
+                        <h3>Sim Kai An</h3>
+                        <h4>simka-wm22@student.tarc.edu.my</h2>
+                        <h4>22WMD01669</h2>
+                    </div>
+                    <div class="ahma">
+                        <a href="#">Change name</a>
+                        <a href="#">Change password</a>
+                        <a href="#">Change profile picture</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hidden Manage Account -->
+
+        <!-- Training -->
+        <div class="training">
+            <div class="train">
+                <h1>Training Booked</h1>
+                <div class="Booked">
+                    <table>
+                        <thead>
+                            <th class="no">No.</th>
+                            <th class="id">Student ID</th>
+                            <th class="name">Name</th>
+                            <th class="date">Date</th>
+                            <th class="time">Time(pm)</th>
+                            <th>Coach</th>
+                        </thead>
+                    </table>
+                    <div class="overflow">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td class="no">1. </td>
+                                    <td class="id">22WMD01733</td>
+                                    <td class="name">Sim Kai An</td>
+                                    <td class="date">4 APR 2023</td>
+                                    <td class="time">6.00 ~ 7.30</td>
+                                    <td>Ow Kah Rok</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Training -->
+
+        <!-- Event -->
+        <div class="event">
+            <h1>Event Booked</h1>
+            <div class="Booked">
+                <table>
+                    <thead>
+                        <th class="Eno">No.</th>
+                        <th class="Eid">Student ID</th>
+                        <th class="Ename">Name</th>
+                        <th class="Edate">Date</th>
+                        <th class="Etime">Time</th>
+                        <th>Event Name</th>
+                    </thead>
+                </table>
+                <div class="flowOver">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="Eno">1. </td>
+                                <td class="Eid">22WMD01733</td>
+                                <td class="Ename">Sim Kai An</td>
+                                <td class="Edate">4 APR 2023 - 5 APR 2023</td>
+                                <td class="Etime">6.00 ~ 7.30</td>
+                                <td>Men's Badminton Tournament</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- Event -->
+
+    </body>
+</html>

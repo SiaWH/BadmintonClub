@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Badminton Club</title>
+        <link rel="stylesheet" href="user.css">
+        <link rel="stylesheet" href="training.css">
+        <script src="user.js" defer></script>
+        <script src="training.js" defer></script>
+    </head>
+
+    <body>
+
+        <!-- Header -->
+        <header>
+            <table>
+                <tr>
+                    <td style="width: 7%; text-align: end;">
+                        <a href="user.html" title="Homepage"><img src="./picture/logo.jpg" alt="Logo" class="logo"/></a>
+                    </td>
+                    <td style="width: 10%; color: rgb(70, 70, 70)" class="club">
+                        <h1><i>Badminton<br>Club</i></h1>
+                    </td>
+                    <td style="text-align: center;">
+                        <form>
+                            <label for="search"></label>
+                            <input type="search" id="search" name="search" placeholder="&nbsp;&nbsp;Search" title="Type to search">
+                            <button type="submit" id="srchbtn" title="Search">Search</button>
+                        </form>              
+                    </td>
+                    <nav>
+                        <ul>
+                            <li style="list-style-type: none;">
+                                <td class="toplink">
+                                    <a class="actived" href="user.html">Training</a>
+                                </td>
+                            </li>
+                            <li style="list-style-type: none;">
+                                <td class="toplink">
+                                    <a href="myticket.html">MyTicket</a>
+                                </td>
+                            </li>
+                            <li style="list-style-type: none;">
+                                <td class="toplink" style="width: 11%;">
+                                    <a href="contactus.html">ContactUs</a>
+                                </td>
+                            </li>
+                            <li style="list-style-type: none;">
+                                <td class="toplinks" style="width: 7%;">
+                                    <img src="./picture/KAIAN.jpeg" title="SIM" alt="">
+                                    <div class="profile">
+                                        <div style="background-color: rgba(194, 194, 194, 0.799); border-radius: 5px 5px 0 0;">
+                                            <img src="./picture/KAIAN.jpeg" title="View Picture" alt="">
+                                        </div>
+                                        <div style="padding: 5% 0 5% 0; line-height: 30px;">
+                                            <p>Sim Kai An</p>
+                                            <p>simka-wm22@student.tarc.edu.my</p>
+                                            <p>22WMD01669</p>
+                                        </div>
+                                        <a class="acc">Manage Account   <p class="arrow">&#8883;</p> </a>
+                                        <div class="setting">
+                                            <a href="#">Change name</a>
+                                            <a href="#">Change password</a>
+                                            <a href="#">Change profile picture</a>
+                                        </div>
+                                        <a onclick="logOut()">Logout</a>
+                                    </div>
+                                </td>
+                            </li>
+                        </ul>
+                    </nav>
+                    <td class="menu">
+                        <button id="open" title="Menu">&#9776;</button>
+                    </td>
+                </tr>
+            </table>
+        </header>
+        <!-- Header -->
+
+        <!-- View Profile Picture -->
+        <div class="view">
+            <img src="./picture/KAIAN.jpeg" alt="">
+        </div>
+        <!-- View Profile Picture -->
+
+        <!-- Hidden Menu -->
+        <div id="menuList">
+            <ul>
+                <li class="close" style="background-color: rgb(38, 38, 38);">
+                    <h1 id="heading">Menu</h1>
+                    <button id="close" title="Close">&#10006;</button>
+                </li>
+                <li class="hp">
+                    <a><img src="./picture/KAIAN.jpeg" title="View profile" alt=""></a>
+                    <p class="hname">Sim Kai An</p>
+                </li>
+                <li class="nav"><a href="#">&#9751;&nbsp;&nbsp;&nbsp;Training</a></li>
+                <li class="nav"><a href="myticket.html">&#9873;&nbsp;&nbsp;&nbsp;MyTicket</a></li>
+                <li class="nav"><a href="contactus.html">&#9742;&nbsp;&nbsp;&nbsp;ContactUs</a></li>
+                <li class="nav"><a onclick="logOut()">&#9754;&nbsp;&nbsp;&nbsp;Logout</a></li>
+            </ul>
+        </div>
+        <!-- Hidden Menu -->
+
+        <!-- Hidden Manage Account -->
+        <div class="outhma">
+            <div class="hma">
+                <div class="bar">
+                    <h4 style="display: inline;">&nbsp;&nbsp;&nbsp;Account Setting</h4>
+                    <button id="aclose" title="Close">&#10006;</button>
+                </div>
+                <div class="inhma">
+                    <img class="himg" title="View picture" src="./picture/KAIAN.jpeg" alt="">
+                    <div class="dhma">
+                        <h3>Sim Kai An</h3>
+                        <h4>simka-wm22@student.tarc.edu.my</h2>
+                        <h4>22WMD01669</h2>
+                    </div>
+                    <div class="ahma">
+                        <a href="#">Change name</a>
+                        <a href="#">Change password</a>
+                        <a href="#">Change profile picture</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hidden Manage Account -->
+
+        <!-- msg -->
+        <div class="msg">
+            <div class="words">
+                <p>Booking successfully!</p>
+                <button onclick="closeBooking()">OK</button>
+            </div>
+        </div>
+        <!-- msg -->
+        
+        <!-- Booking -->
+        <div class="hiddenBooking">
+            <form action="" method="post" class="booking">
+                <legend>Book for training</legend>
+                <label for="name">Full Name: </label>
+                <br>
+                <input type="text" name="stdName" id="name" required>
+                <br>
+                <br>
+                <label for="studentID">Student ID: </label>
+                <br>
+                <input type="text" name="stdID" id="studentID" required>
+                <br>
+                <br>
+                <label for="phone">Contact Number(E.g. 0123456789): </label>
+                <br>
+                <input type="tel" name="stdPhone" id="phone" required>
+                <br>
+                <br>
+                <label for="email">Email Address: </label>
+                <br>
+                <input type="email" name="stdEmail" id="email" required>
+                <br>
+                <br>
+                <label for="faculty">Faculty: </label>
+                <br>
+                <select name="stdFaculty" id="faculty" required>
+                    <option disabled selected value="">-- Choose --</option>
+                    <option value="FAFB">FAFB</option>
+                    <option value="FSSH">FSSH</option>
+                    <option value="FCCI">FCCI</option>
+                    <option value="FOET">FOET</option>
+                    <option value="FOBE">FOBE</option>
+                    <option value="FOCS">FOCS</option>
+                    <option value="FOAS">FOAS</option>
+                    <option value="CPUS">CPUS</option>
+                </select>
+                <br>
+                <br>
+                <label for="programme">Programme, year & Semester(E.g. DFT Y1S3): </label>
+                <br>
+                <input type="text" name="stdProgramme" id="programme" required>
+                <br>
+                <br>
+                <label for="coachChoosen">Which coach would you like to train with?</label>
+                <br>
+                <br>
+                <input type="radio" name="coachChoosen" id="coach1" value="Ow Kah Rok" checked>
+                <label for="coach1">Mr. Ow Kah Rok</label>
+                <input type="radio" name="coachChoosen" id="coach2" value="Kenneph Ooi Wei Jie">
+                <label for="coach2">Mr. Kenneph Ooi Wei Jie</label>
+                <br>
+                <br>
+                <input type="submit" value="Submit" style="cursor: pointer;" title="Submit" id="book-btn">
+                <input type="reset" value="Reset" style="cursor: pointer;" title="Reset">
+                <button onclick="Booking()" style="cursor: pointer;" title="Cancel">Cancel</button>
+            </form>
+        </div>
+        <!-- Booking -->
+
+        <!-- Coaches -->
+        <div class="coaches">
+            <h1>Our Coaches:</h1>
+            <div class="coach">
+                <div class="cimg">
+                    <img src="./picture/KR.jpeg" alt="">
+                    <h3>Mr. Ow Kah Rok</h3>
+                </div>
+                <p class="cdetail">
+                    <strong>Name: </strong>Ow Kah Rok <br>
+                    <strong>Age: </strong>22 <br>
+                    <strong>Gender: </strong>Male <br>
+                    <strong>Birth Date: </strong>8 Nov 2001 <br>
+                    <br>
+                    <strong>Rewards:</strong>
+                    <br>
+                    - 2019 Men's Single Tournament Champion
+                    <br>
+                    - 2019 Men's Doubles Tournament Runner-up
+                    <br>
+                    - 2020 Shell Open Men's Single Champion
+                    <br>
+                    - 2020 Winter All Open Men's Single Runner-up
+                    <br>
+                    - 2021 Spring Open Men's Doubles Third Place
+                    <br>
+                    - 2022 KAIEN Fight Men's Single Champion
+                    <br>    
+                </p>
+            </div>
+            <div class="coach">
+                <div class="cimg">
+                    <img src="./picture/KEN.jpeg" alt="">
+                    <h3>Mr. Kenneph Ooi Wei Jie</h3>
+                </div>
+                <p class="cdetail">
+                    <strong>Name: </strong>Kenneph Ooi Wei Jie <br>
+                    <strong>Age: </strong>20 <br>
+                    <strong>Gender: </strong>Male <br>
+                    <strong>Birth Date: </strong>10 Aug 2003 <br>
+                    <br>
+                </p>
+                <p class="cReward">
+                    <strong>Rewards:</strong>
+                    <br>
+                    - 2020 Shell Open Men's Single Runner-up
+                    <br>
+                    - 2020 Winter All Open Men's Single Third Place
+                    <br>
+                    - 2021 Spring Open Men's Doubles Champion
+                    <br>
+                    - 2022 KAIEN Fight Men's Single Runner-up
+                    <br>
+                    - 2022 Machos Men's Doubles Champion
+                    <br>
+                </p>
+            </div>
+        </div>
+        <!-- Coaches -->
+
+        <!-- Timetable -->
+        <div class="timetable">
+            <h1>Training Timetable</h1>
+            <table>
+                <colgroup>
+                    <col class="timeColumn"/>
+                    <col class="wDayColumns" span="5"/>
+                    <col class="wEndColumns"span="2"/>
+                    <thead>
+                        <th>Time (PM)</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                        <th>Sun</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>6:00</th>
+                            <td rowspan="8">No Training</td>
+                            <td rowspan="4">O</td>
+                            <td rowspan="8">No Training</td>
+                            <td rowspan="4">K</td>
+                            <td rowspan="8">No Training</td>
+                            <td rowspan="8">Rest day</td>
+                            <td rowspan="8">Rest day</td>
+                        </tr>
+                        <tr>
+                            <th>6:30</th>
+                        </tr>
+                        <tr>
+                            <th>7:00</th>
+                        </tr>
+                        <tr>
+                            <th>7:30</th>
+                        </tr>
+                        <tr>
+                            <th>7:30</th>
+                            <td rowspan="4">O</td>
+                            <td rowspan="4">K</td>
+                        </tr>
+                        <tr>
+                            <th>8:00</th>
+                        </tr>
+                        <tr>
+                            <th>8:30</th>
+                        </tr>
+                        <tr>
+                            <th>9:00</th>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="8"><strong>
+                                K = Kenneph Ooi Wei Jie <br>
+                                O = Ow Kah Rok</strong>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </colgroup>
+            </table>
+        </div>
+        <!-- Timetable -->
+
+        <div id="book">
+            <div>
+                <button onclick="Booking()" title="Booking">Booking Now!</button>
+            </div>
+        </div>
+        
+    </body>
+</html>

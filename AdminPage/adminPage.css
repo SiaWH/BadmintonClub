@@ -1,0 +1,370 @@
+#adminLogo
+{
+    width: 12%;
+    float: right;
+    margin-right: 5%;
+    border-radius: 50%;
+    cursor: pointer;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+
+body
+{
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding: 0;
+    font-size: 100%;
+    background-image: url(./picture/background.jpg);
+    background-size: cover;
+    width: 100%;
+}
+
+
+
+#control
+{
+    position: fixed;
+    left: -100%;
+    width: 40%;
+    display: flex;
+    transition: left 0.5s ease-in-out;
+}
+
+
+#dashboard 
+{
+    width: 98%;
+    margin-left: 1%;
+    margin-top: 2%;
+}
+
+
+#topic
+{
+    width: 100%;
+    font-size: 2vw;
+}
+
+#eventDetails 
+{
+    width: 99.6%;
+    font-size: 3vw;
+    border: 2px dotted violet;
+    margin-bottom: 3%;
+    text-align: center;
+    margin-top: 2%;
+    opacity: 100%;
+}
+
+#eventTable
+{
+    text-align: center;
+}
+
+#dashboard td
+{
+    font-size: 1.5vw;
+}
+
+h1
+{
+    text-align: right;
+}
+
+#title
+{
+    width: 60%;
+}
+
+#title h1
+{
+    font-size: 2.5vw;
+    color: black;
+}
+
+
+#border
+{
+    border: 2px solid black;
+    padding-top: 3%;
+    padding-bottom:3%;
+    text-align: center;
+    background-color: cyan;
+    opacity: 80%;
+}
+
+
+#listEvents
+{
+    font-size: 1.5vw;
+    margin-top: 5%;
+    margin-left: 3%;
+    border-spacing: 1vw;
+    width: 94%;
+    border : 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+#listEvents td
+{
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+}
+
+#listEvents tr:hover
+{
+    background-color: rgb(77, 136, 255);
+    opacity: 80%;
+}
+
+#listEvents tr:active
+{
+    background-color: #6B7770;
+    opacity: 80%;
+}
+
+
+#listEvents tr
+{
+    border-bottom: 1px solid #ddd;
+    opacity: 80%;
+    background-color: appworkspace;
+}
+
+
+
+    #controlMenu.hide
+    {
+        font-size: 2vw;
+        position: fixed;
+        z-index: 98;
+        left: -100%;
+    }
+    
+    #controlMenu
+    {
+        left: 0%;
+        top: 13%;
+        transition: left ease-in-out 0.5s;
+        font-size: 2vw;
+        position: fixed;
+        z-index: 98;
+    }
+    
+    #controlMenu td:hover
+    {
+        color: red;
+    }
+
+
+
+
+#controlMenu td
+{
+    padding-top: 6.5%;
+    padding-bottom: 6.5%;
+    border: 3px solid black;
+    background-color: aqua;
+    text-align: center; 
+}
+
+
+#t1
+{
+    display: table;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    background-color: white;
+    height: 12%;
+    box-shadow: 1px 3px 8px rgb(140,140,140);
+}
+
+
+#menu
+{
+    width: 3%;
+    display: inline-block;
+    position: absolute;
+    top: 23%;
+    left: 2%;
+}
+
+#darkMode
+{
+    width: 3%;
+    display: inline-block;
+    position: absolute;
+    top: 23%;
+    left: 12%;
+}
+
+#h1
+{
+    display: inline-block;
+    position: absolute;
+    left: 33%;
+    top: 0%;
+    font-size: 2.6vw;
+}
+
+#adminLogo
+{
+    display: inline-block;
+    width: 4%;
+    border-radius: 50%;
+    right: 5%;
+    top: 13%;
+    position: absolute;
+}
+
+
+#title1
+{
+    font-size: 3vw;
+    margin-top: 13%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: skyblue;
+    border: 2px dotted black;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+
+#test2
+{
+    font-size: 3vw;
+    margin-top: 6%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: skyblue;
+    border: 2px dotted black;
+    text-align: center;
+    margin-bottom: 5%;
+}
+    
+
+
+
+
+
+
+#training
+{
+    font-size: 1.5vw;
+    margin-top: 5%;
+    margin-left: 3%;
+    border-spacing: 1vw;
+    width: 94%;
+    border : 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+#training td
+{
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    border: 1px solid black;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+#training tr
+{
+    border: 2px solid black;
+    text-align: center;
+    background-color: darkcyan;
+    opacity: 80%;
+}
+
+#test
+{
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+}
+
+
+#training td:hover
+{
+    background-color: rgb(77, 136, 255);
+}
+
+#training td:active
+{
+    background-color: #6B7770;
+}
+
+
+
+
+/*For mobile*/
+
+@media screen and (max-width: 900px) 
+{
+    #controlMenu
+    {
+        top: 11%;
+        position: fixed;
+    }
+}
+
+
+@media screen and (max-width: 750px) 
+{
+    #controlMenu
+    {
+        top: 9%;
+        position: fixed;
+    }
+}
+
+@media screen and (max-width: 500px) 
+{
+    #darkMode
+    {
+        top: 2.5%;
+        position: fixed;
+    }
+}
+
+@media screen and (max-width: 450px) 
+{
+    #controlMenu
+    {
+        top: 7%;
+        position: fixed;
+    }
+}
+
+@media screen and (max-width: 400px) 
+{
+    #controlMenu
+    {
+        top: 6%;
+        position: fixed;
+    }
+}
+
+
+@media screen and (max-width: 350px) 
+{
+    #controlMenu
+    {
+        top: 5%;
+        position: fixed;
+    }
+}
+
+
+
+

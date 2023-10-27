@@ -1,0 +1,199 @@
+/* Image Slider */
+
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main{
+    width: 100%;
+    margin: 13% auto 0;
+    display: flex;
+    border: 10px white solid;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 1px 3px 8px rgb(140, 140, 140);
+    overflow: hidden;
+    position: relative;
+}
+
+.slider{
+    justify-content: center;
+}
+
+.slider img{
+    max-width: 100%;
+    height: auto;
+    width: 1200px;
+    max-height: 500px;
+    border-radius: 30px;
+}
+
+.slider{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+#left{
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    z-index: 10;
+    height: fit-content;
+    background-color: rgb(79, 79, 79);
+    color: white;
+    opacity: 0.3;
+    font-size: 300%;
+    cursor: pointer;
+}
+
+#right{
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    z-index: 10;
+    right: 0%;
+    height: fit-content;
+    background-color: rgb(79, 79, 79);
+    color: white;
+    opacity: 0.3;
+    font-size: 300%;
+    cursor: pointer;
+}
+
+#left:hover, #right:hover{
+    opacity: 0.8;
+    transition: 0.2s;
+}
+
+.fade{
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+@keyframes fade{
+    from{opacity: 0.3}
+    to{opacity: 1}
+}
+
+/* Events */
+
+.title{
+    text-align: center;
+    color: white;
+    padding: 0.5%;
+    border-radius: 50px;
+    width: 80%;
+    margin: 2% auto 2% auto;
+    background-color: #019875;
+    cursor:context-menu;
+}
+
+.events{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#press{
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.events a, #press .events a{
+    text-decoration: none;
+    color: black;
+    margin: 0 2% 5% 2%;
+    padding: 1%;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 1px 3px 8px rgb(140, 140, 140);
+    transition: all linear 0.5s;
+    transform: scale(1, 1);
+}
+
+.events a:hover{
+    box-shadow: 1px 3px 8px rgb(65, 65, 65);
+    transform: scale(1.05, 1.05);
+    cursor: pointer;
+}
+
+.event img{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.valid{
+    color: rgb(0, 183, 0);
+}
+
+.unvalid{
+    color: red;
+}
+
+#more{
+    text-decoration: none;
+    background-color: whitesmoke;
+    color: rgb(23, 29, 27);
+    display: block;
+    width: 10%;
+    padding: 1%;
+    text-align: center;
+    margin: -3% auto 3% auto;
+    border: 0px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all linear 0.2s;
+}
+
+#more:hover{
+    background-color: #b2ecb2;
+    color: rgb(31, 39, 36);
+}
+
+/* Responsive Screening */
+
+@media only screen and (max-width: 945px){
+    .main{
+        margin: 21% auto 0;
+    }
+    #left, #right{
+        font-size: 250%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    #left, #right{
+        font-size: 200%;
+    }
+}
+
+@media only screen and (max-width: 388px){
+    .title h1{
+        font-size: 122%;
+    }
+    .events a{
+        width: 70%;
+    }
+    .event img{
+        width: 100%;
+    }
+    #left, #right{
+        font-size: 150%;
+    }
+}
+
+@media only screen and (max-width: 316px){
+    .title h1{
+        font-size: 90%;
+    }
+    #left, #right{
+        font-size: 100%;
+    }
+}

@@ -1,0 +1,199 @@
+@charset "utf-8";
+
+/* Coaches Details */
+
+.coaches, .timetable{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.coaches h1{
+    width: fit-content;
+    margin-top: 10%;
+    padding: 1%;
+    border-radius: 50px;
+    color: white;
+    background-color: #019875;
+}
+
+.coach{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1.5% 0 1.5% 0;
+    border: 5px solid #019875;
+    box-shadow: 1px 3px 8px rgb(140, 140, 140);
+}
+
+.coach h3{
+    text-align: center;
+    background-color: #019875;
+    color: white;
+}
+
+.coach img{
+    width: 100%;
+    height: 100%;
+}
+
+.cimg{
+    border-right: 5px solid #019875;
+    height: 100%;
+    width: 30%;
+}
+
+.cdetail{
+    padding-left: 1%;
+    width: 70%;
+    font-size: larger;
+}
+
+/* Timetable */
+
+.timetable{
+    margin-bottom: 3%;
+}
+
+.timetable h1{
+    width: 100%;
+    margin: 5% 0 2% 0;
+    padding: 0.5%;
+    border-radius: 50px;
+    color: white;
+    background-color: #019875;
+    text-align: center;
+}
+
+.timetable table{
+    border-collapse: collapse;
+}
+
+.timetable table th, .timetable table td{
+    border: 2px solid #019875;
+    padding: 1%;
+}
+
+col.timeColumn{
+    width: 10%;
+    background-color: rgb(215, 205, 151);
+ }
+ 
+ col.wDayColumns{
+    width: 11%;
+    background-color: rgb(236, 255, 211);
+ }
+ 
+ col.wEndColumns{
+    width: 11%;
+    background-color: rgb(255, 231, 255);
+ }
+
+thead{
+    color: white;
+    background-color: rgb(105, 177, 60);
+ }
+
+thead th:first-of-type{
+    background-color: rgb(153, 86, 7);
+ }
+ 
+ thead th:nth-of-type(7), thead th:nth-of-type(8){
+    background-color: rgb(153, 0, 153);
+ }
+
+ tbody tr td{
+    text-align: center;
+ }
+
+ tfoot{
+    background-color: rgb(85, 85, 85);
+    color: white;
+ }
+
+ /* Booking Form */
+.hiddenBooking, .msg{
+    display: none;
+    position: fixed;
+    overflow-y: none;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(66, 66, 66, 0.604);
+}
+
+.words{
+    padding: 5%;
+    background-color: rgb(145, 226, 145);
+}
+
+ form.booking{
+    border: 1px solid black;
+    background-color: aliceblue;
+    width: fit-content;
+    padding: 1%;
+    margin: 0 auto 0 auto;
+    margin-top: 8%;
+ }
+
+ #book{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 0 auto 3% auto;
+ }
+
+ #book button{
+    padding: 2%;
+    background-color: #019875;
+    color: white;
+    border: 0;
+    border-radius: 60px;
+    width: 100%;
+    cursor: pointer;
+    font-size: larger;
+ }
+
+ /* Responsive Screening */
+ @media only screen and (max-width: 1100px){
+    .coaches h1{
+        margin-top: 13%;
+    }
+ }
+
+ @media only screen and (max-width: 1010px){
+    .cdetail{
+        width: 100%;
+    }
+    .cimg{
+        width: 100%;
+        border: 0;
+        text-align: center;
+    }
+    .cimg img{
+        width: 65%;
+    }
+ }
+ 
+ @media only screen and (max-width: 945px){
+    .coaches h1{
+        margin-top: 19%;
+    }
+ }
+
+ @media only screen and (max-width: 500px){
+    .cimg img{
+        width: 100%;
+    }
+ }
+
+ @media only screen and (max-width: 388px){
+    .coaches h1{
+        margin-top: 22%;
+    }
+ }

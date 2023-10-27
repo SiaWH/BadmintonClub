@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Badminton Club</title>
+        <link rel="stylesheet" href="user.css">
+        <script src="user.js" defer></script>
+    </head>
+
+    <body>
+
+        <!-- Header -->
+        <header>
+            <table>
+                <tr>
+                    <td style="width: 7%; text-align: end;">
+                        <a href="user.html" title="Homepage"><img src="./picture/logo.jpg" alt="Logo" class="logo"/></a>
+                    </td>
+                    <td style="width: 10%; color: rgb(70, 70, 70)" class="club">
+                        <h1><i>Badminton<br>Club</i></h1>
+                    </td>
+                    <td style="text-align: center;">
+                        <form>
+                            <label for="search"></label>
+                            <input type="search" id="search" name="search" placeholder="&nbsp;&nbsp;Search" title="Type to search">
+                            <button type="submit" id="srchbtn" title="Search">Search</button>
+                          </form>              
+                    </td>
+                    <nav>
+                        <ul>
+                            <li style="list-style-type: none;">
+                                <td class="toplink">
+                                    <a href="training.html">Training</a>
+                                </td>
+                            </li>
+                            <li style="list-style-type: none;">
+                                <td class="toplink">
+                                    <a href="myticket.html">MyTicket</a>
+                                </td>
+                            </li>
+                            <li style="list-style-type: none;">
+                                <td class="toplink" style="width: 11%;">
+                                    <a href="contactus.html">ContactUs</a>
+                                </td>
+                            </li>
+                            <li style="list-style-type: none;">
+                                <td class="toplinks" style="width: 7%;">
+                                    <img src="./picture/KAIAN.jpeg" title="SIM" alt="">
+                                    <div class="profile">
+                                        <div style="background-color: rgba(194, 194, 194, 0.799); border-radius: 5px 5px 0 0;">
+                                            <img src="./picture/KAIAN.jpeg" title="View Picture" alt="">
+                                        </div>
+                                        <div style="padding: 5% 0 5% 0; line-height: 30px;">
+                                            <p>Sim Kai An</p>
+                                            <p>simka-wm22@student.tarc.edu.my</p>
+                                            <p>22WMD01669</p>
+                                        </div>
+                                        <a class="acc">Manage Account   <p class="arrow">&#8883;</p> </a>
+                                        <div class="setting">
+                                            <a class="changeNM">Change name</a>
+                                            <a class="changePW">Change password</a>
+                                            <a class="changePF">Change profile picture</a>
+                                        </div>
+                                        <a onclick="logOut()">Logout</a>
+                                    </div>
+                                </td>
+                            </li>
+                        </ul>
+                    </nav>
+                    <td class="menu">
+                        <button id="open" title="Menu">&#9776;</button>
+                    </td>
+                </tr>
+            </table>
+        </header>
+        <!-- Header -->
+
+        <!-- View Profile Picture -->
+        <div class="view">
+                <img src="./picture/KAIAN.jpeg" alt="">
+        </div>
+        <!-- View Profile Picture -->
+
+        <!-- Change Profile Picture -->
+        <div class="changeProfile">
+            <div class="profileSetting">
+                <div class="bar">
+                    <h4 style="display: inline;">&nbsp;&nbsp;&nbsp;Setting</h4>
+                    <button id="bclose" title="Close">&#10006;</button>
+                </div>
+                <div class="profileChanger">
+                    <img src="./picture/KAIAN.jpeg" class="settingPic">
+                    <form action="" method="post" enctype="multipart/form-data">
+                        <input type="file" name="profile">
+                        <input type="submit" name="submit" value="Upload">
+                    </form>
+                </div>
+                <div class="nameChanger">
+                    <img src="./picture/KAIAN.jpeg" class="settingPic">
+                    <p>Your current user name:</p>
+                    <p>Sim Kai An</p>
+                    <br>
+                    <form action="" method="post">
+                        <label for="newName">What name you want to change to?</label>
+                        <br><br>
+                        <input type="text" name="changeName" id="newName">
+                        <input type="submit" name="nameSubmit" id="" value="Go">
+                    </form>
+                </div>
+                <div class="passChanger">
+                    <img src="./picture/KAIAN.jpeg" class="settingPic">
+                    <br>
+                    <form action="" method="post">
+                        <label for="cPass">Enter your current password</label>
+                        <br>
+                        <input type="password" id="cPass" name="currentPass">
+                        <input type="submit" name="currentSubmit" value="Go">
+                        <br><br>
+                        <label for="nPass">Enter your new password</label>
+                        <br>
+                        <input type="password" id="nPass" name="newPass" disabled>
+                        <input type="submit" name="newSubmit" value="Go" disabled>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Change Profile Picture -->
+
+        <!-- Hidden Menu -->
+        <div id="menuList">
+            <ul>
+                <li class="close" style="background-color: rgb(38, 38, 38);">
+                    <h1 id="heading">Menu</h1>
+                    <button id="close" title="Close">&#10006;</button>
+                </li>
+                <li class="hp">
+                    <a><img src="./picture/KAIAN.jpeg" title="View profile" alt=""></a>
+                    <p class="hname">Sim Kai An</p>
+                </li>
+                <li class="nav"><a href="training.html">&#9751;&nbsp;&nbsp;&nbsp;Training</a></li>
+                <li class="nav"><a href="myticket.html">&#9873;&nbsp;&nbsp;&nbsp;MyTicket</a></li>
+                <li class="nav"><a href="contactus.html">&#9742;&nbsp;&nbsp;&nbsp;ContactUs</a></li>
+                <li class="nav"><a onclick="logOut()">&#9754;&nbsp;&nbsp;&nbsp;Logout</a></li>
+            </ul>
+        </div>
+        <!-- Hidden Menu -->
+
+        <!-- Hidden Manage Account -->
+        <div class="outhma">
+            <div class="hma">
+                <div class="bar">
+                    <h4 style="display: inline;">&nbsp;&nbsp;&nbsp;Account Setting</h4>
+                    <button id="aclose" title="Close">&#10006;</button>
+                </div>
+                <div class="inhma">
+                    <img class="himg" title="View picture" src="./picture/KAIAN.jpeg" alt="">
+                    <div class="dhma">
+                        <h3>Sim Kai An</h3>
+                        <h4>simka-wm22@student.tarc.edu.my</h2>
+                        <h4>22WMD01669</h2>
+                    </div>
+                    <div class="ahma">
+                        <a class="changeNM">Change name</a>
+                        <a class="changePW">Change password</a>
+                        <a class="changePF">Change profile picture</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hidden Manage Account -->
+
+        <!-- Image Slider -->
+        <div class="box">
+            <div class="main">
+                <a id="left" onclick="nextSlide(-1)">&#x2B9C;</a>
+                <a id="right" onclick="nextSlide(1)">&#x2B9E;</a>
+                <div class="slider">
+                    <div class=" sliders fade">
+                        <a href=""><img src="./picture/Silde Show/internalmatch.jpg" alt=""></a>
+                    </div>
+                    <div class=" sliders fade">
+                        <a href=""><img src="./picture/Silde Show/friendlymatch.jpg" alt=""></a>
+                    </div>
+                    <div class=" sliders fade">
+                        <a href=""><img src="./picture/Silde Show/internationalmatch.jpg" alt=""></a>
+                    </div>
+                    <div class=" sliders fade">
+                        <a href=""><img src="./picture/Silde Show/professionalmatch.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Image Slider -->
+        
+        <!-- Event List -->
+        <div class="title">
+            <h1>~~~~ <i>Events List</i> ~~~~</h1>
+        </div>
+        <div class="events">
+
+            <a href="">
+                <div class="event" title="Click for more information">
+                    <img src="./picture/friendlymatch.jpg" alt="">
+                    <h3>Badminton friendship Tournament</h3>
+                    <h5>Venue: Sport Complex TARUMT</h5>
+                    <h5>Date: 16 April 2023</h5>
+                    <h5>Maximum available for 60 person</h5>
+                    <br>
+                    <h4>Available Now</h4>
+                </div>
+            </a>
+            
+            <a href="">
+                <div class="event" title="Click for more information">
+                    <img src="./picture/internalmatch.jpg" alt="">
+                    <h3>Badminton Internal Tournament</h3>
+                    <h5>Venue: Sport Complex TARUMT</h5>
+                    <h5>Date: 2 July 2023</h5>
+                    <h5>Maximum available for 60 person</h5>
+                    <br>
+                    <h4>Available Now</h4>
+                </div>
+            </a>
+            
+            <a href="">
+                <div class="event" title="Click for more information">
+                    <img src="./picture/internationalmatch.jpg" alt="">
+                    <h3>Badminton International Tournament</h3>
+                    <h5>Venue: Sport Complex TARUMT</h5>
+                    <h5>Date: 20 Aug 2023</h5>
+                    <h5>Maximum available for 40 person</h5>
+                    <br>
+                    <h4>Available Now</h4>
+                </div>
+            </a>
+            
+            <a href="">
+                <div class="event" title="Click for more information">
+                    <img src="./picture/professionalmatch.jpg" alt="">
+                    <h3>Badminton Professional Tournament</h3>
+                    <h5>Venue: Stadium Bukit Jalil</h5>
+                    <h5>Date: 29 - 30 April 2023</h5>
+                    <h5>Maximum available for 30 person</h5>
+                    <br>
+                    <h4>Available Now</h4>
+                </div>
+            </a>
+            
+            <a href="">
+                <div class="event" title="Click for more information">
+                    <img src="./picture/2022past3.jpg" alt="">
+                    <h3>NRY Badminton Tournament</h3>
+                    <h5>Venue: Setapak Badminton Centre</h5>
+                    <h5>Date: 9 - 16 Nov 2022</h5>
+                    <h5>Maximum available for 50 person</h5>
+                    <br>
+                    <h4>Available Now</h4>
+                </div>
+            </a>
+            
+            <a href="">
+                <div class="event" title="Click for more information">
+                    <img src="./picture/2022past2.jpg" alt="">
+                    <h3>Singapore Badminton Open 2022</h3>
+                    <h5>Venue: Singapore Indoor Stadium</h5>
+                    <h5>Date: 12 - 17 Jul 2022</h5>
+                    <h5>Maximum available for 20 person</h5>
+                    <br>
+                    <h4>Available Now</h4>
+                </div>
+            </a>
+            
+            <div id="press">
+
+                <a href="">
+                    <div class="event" title="Click for more information">
+                        <img src="./picture/2022past1.jpg" alt="">
+                        <h3 style="font-size: 110%;">Expatriate Badminton Championship<br/>2022</h3>
+                        <h5>Venue: Desa Petaling Sport Complex</h5>
+                        <h5>Date: 18 Jun 2022</h5>
+                        <h5>Maximum available for 60 person</h5>
+                        <br>
+                        <h4>Available Now</h4>
+                    </div>
+                </a>
+                
+            <a href="">
+                <div class="event" title="Click for more information">
+                    <img src="./picture/2021past3.jpg" alt="">
+                    <h3>Analis Badminton Cup 2021</h3>
+                    <h5>Venue: Sport Complex TARUC</h5>
+                    <h5>Date: 10 -11 Dec 2021</h5>
+                    <h5>Maximum available for 40 person</h5>
+                    <br>
+                    <h4>Available Now</h4>
+                </div>
+            </a>
+            
+            <a href="">
+                <div class="event" title="Click for more information">
+                    <img src="./picture/2021past2.jpg" alt="">
+                    <h3>SAA Badminton Tournament</h3>
+                    <h5>Venue: SXCCE Indoor Badminton Court</h5>
+                    <h5>Date: 25 Sept 2021</h5>
+                    <h5>Maximum available for 50 person</h5>
+                    <br>
+                    <h4>Available Now</h4>
+                </div>
+            </a>
+            
+            <a href="">
+                <div class="event" title="Click for more information">
+                    <img src="./picture/2021past1.jpg" alt="">
+                    <h3>Badminton Team Tournament</h3>
+                    <h5>Venue: Sport Complex TARUC</h5>
+                    <h5>Date: 5 - 6 Jun 2021</h5>
+                    <h5>Maximum available for 60 person</h5>
+                    <br>
+                    <h4>Available Now</h4>
+                </div>
+            </a>
+            
+            <a href="">
+                <div class="event" title="Click for more information">
+                    <img src="./picture/2020past3.jpg" alt="">
+                    <h3>FAB Badminton Tournament</h3>
+                    <h5>Venue: Sport Complex TARUC</h5>
+                    <h5>Date: 16 Nov 2020</h5>
+                    <h5>Maximum available for 80 person</h5>
+                    <br>
+                    <h4>Available Now</h4>
+                </div>
+            </a>
+            
+            <a href="">
+                <div class="event" title="Click for more information">
+                    <img src="./picture/2020past2.jpg" alt="">
+                    <h3>BBA Badminton Tournament</h3>
+                    <h5>Venue: Sport Complex TARUC</h5>
+                    <h5>Date: 18 - 20 Aug 2020</h5>
+                    <h5>Maximum available for 60 person</h5>
+                    <br>
+                    <h4>Available Now</h4>
+                </div>
+            </a>
+            
+            <a href="">
+                <div class="event" title="Click for more information">
+                    <img src="./picture/2020past1.jpg" alt="">
+                    <h3>Men's Badminton Tournament</h3>
+                    <h5>Venue: Sport Complex TARUC</h5>
+                    <h5>Date: 3 - 9 Apr 2020</h5>
+                    <h5>Maximum available for 80 person</h5>
+                    <br>
+                    <h4>Available Now</h4>
+                </div>
+            </a>
+            
+            <a href="">
+                <div class="event" title="Click for more information">
+                    <img src="./picture/past.jpg" alt="">
+                    <h3 style="font-size: 108%;">Badminton Tournament Championship</h3>
+                    <h5>Venue: Sport Complex TARUC</h5>
+                    <h5>Date: 14 Oct 2019</h5>
+                    <h5>Maximum available for 50 person</h5>
+                    <br>
+                    <h4>Available Now</h4>
+                </div>
+            </a>
+            
+            </div>
+            
+        </div>
+        <button id="more" onclick="showMore()">Click for more...</button>
+        <!-- Event List -->
+
+        <!-- Footer -->
+        <footer>
+
+        </footer>
+        <!-- Footer -->
+        
+    </body>
+
+</html>

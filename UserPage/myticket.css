@@ -1,0 +1,121 @@
+/* Booked */
+.training{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.event{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+}
+
+.train{
+    margin-top: 12%;
+    margin-bottom: 5%;
+}
+
+.train h1, .event h1{
+    width: fit-content;
+    padding: 1%;
+    border-radius: 50px;
+    color: white;
+    margin: 1%;
+    background-color: #019875;
+}
+
+.Booked{
+    text-align: center;
+    box-shadow: 2px 5px 7px grey;
+    border: 10px solid whitesmoke;
+    border-radius: 15px;
+}
+
+.Booked table thead{
+    background-color: #017801;
+    color: white;
+}
+
+.overflow{
+    overflow: auto;
+    height: 150px;
+    display: block;
+    background-color: white;
+}
+
+.flowOver{
+    overflow: auto;
+    height: 300px;
+    display: block;
+    background-color: white;
+}
+
+.overflow table tbody tr td, .flowOver table tbody tr td{
+    border-bottom: 1px solid #017801;
+    border-left: 1px solid #017801;
+    border-right: 1px solid #017801;
+}
+
+.Booked table{
+    background-color: #c0ffc0;
+    border-collapse: collapse;
+}
+
+.no{
+    width: 5%;
+}
+
+.id{
+    width: 20%;
+}
+
+.name{
+    width: 25%;
+}
+
+.date{
+    width: 15%;
+}
+
+.time{
+    width: 15%;
+}
+
+.Eno{
+    width: 5%;
+}
+
+.Eid{
+    width: 10%;
+}
+
+.Ename{
+    width: 15%;
+}
+
+.Edate{
+    width: 20%;
+}
+
+.Etime{
+    width: 15%;
+}
+
+/* Responsive Screening */
+@media only screen and (max-width: 1000px){
+    .train{
+        margin-top: 17%;
+    }
+}
+
+@media only screen and (max-width: 620px){
+    .training, .event{
+        width: 90%;
+    }
+}
