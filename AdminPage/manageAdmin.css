@@ -1,0 +1,96 @@
+#admin
+{
+    margin-top: 8%;
+    border-collapse: collapse;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#admin th
+{
+    font-size: 2vw; 
+    color: white;
+}
+
+#admin td
+{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 1.5vw;
+}
+
+#admin tr
+{
+    background-color: white;
+    opacity: 80%;
+}
+
+#admin  tr:hover
+{
+    background-color: rgb(77, 136, 255);
+    opacity: 80%;
+}
+
+#admin tr:active
+{
+    background-color: #6B7770;
+    opacity: 80%;
+}
+
+#t1
+{
+    display: table;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    background-color: white;
+    height: 12%;
+    box-shadow: 1px 3px 8px rgb(140,140,140);
+}
+
+
+#menu
+{
+    width: 3%;
+    display: inline-block;
+    position: absolute;
+    top: 23%;
+    left: 2%;
+}
+
+#darkMode
+{
+    width: 3%;
+    display: inline-block;
+    position: absolute;
+    top: 23%;
+    left: 12%;
+}
+
+#h1
+{
+    display: inline-block;
+    position: absolute;
+    left: 40%;
+    top: 0%;
+    font-size: 2.6vw;
+}
+
+#adminLogo
+{
+    display: inline-block;
+    width: 4%;
+    border-radius: 50%;
+    right: 5%;
+    top: 13%;
+    position: absolute;
+}
+
+body
+{
+    background-image: url(./picture/background.jpg);
+    margin: 0;
+    padding: 0;
+}

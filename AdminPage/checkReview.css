@@ -1,0 +1,90 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28 Mar 2023, 00:34:33
+    Author     : Huawei
+*/
+body
+{
+    width: 100%;
+    overflow: auto;
+    background-image: url(./picture/background.jpg);
+    padding: 0;
+    margin: 0;
+}
+
+#reviewTable
+{
+    margin-top:  13%;
+    border-collapse: collapse;
+    border: 2px solid black;
+    text-align: center;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#reviewTable tr
+{
+    font-size: 1.5vw;
+    background-color: white;
+    opacity: 90%;
+}
+
+#reviewTable td
+{
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#t1
+{
+    display: table;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    background-color: white;
+    height: 12%;
+    box-shadow: 1px 3px 8px rgb(140,140,140);
+}
+
+
+#menu
+{
+    width: 3%;
+    display: inline-block;
+    position: absolute;
+    top: 23%;
+    left: 2%;
+}
+
+#darkMode
+{
+    width: 3%;
+    display: inline-block;
+    position: absolute;
+    top: 23%;
+    left: 12%;
+}
+
+#h1
+{
+    display: inline-block;
+    position: absolute;
+    left: 40%;
+    top: 0%;
+    font-size: 2.6vw;
+}
+
+#adminLogo
+{
+    display: inline-block;
+    width: 4%;
+    border-radius: 50%;
+    right: 5%;
+    top: 13%;
+    position: absolute;
+}
